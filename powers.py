@@ -318,6 +318,7 @@ class Jogo:
         if pyxel.btnp(pyxel.KEY_RETURN):
             pyxel.stop(1)
             self.state = "jogo"
+            
 
     def draw_menu(self):
         pyxel.cls(3)

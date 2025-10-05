@@ -303,8 +303,8 @@ class Jogo:
         self.sparks = [[random.randint(0, 255), random.randint(0, 99), random.choice([8,10,11,12,14])] for _ in range(30)]
         # Define som de explosão (efeito curto)
         pyxel.sound(0).set("c3c2c1", "nns", "7", "f", 10)
-        # Efeito sonoro de início de jogo (menu)
-        pyxel.sound(1).set("c3e3g3c4g3e3c3c2", "t", "7", "n", 25)
+        # Efeito sonoro de início de jogo (menu) com volume reduzido
+        pyxel.sound(1).set("c3e3g3c4g3e3c3c2", "t", "3", "n", 25)
         pyxel.play(1, 1, loop=True)
         pyxel.run(self.update, self.draw)
 
